@@ -5291,7 +5291,7 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #2D2D2D;
   background-clip: border-box;
-  border: 1px solid #C1C1C1;
+  border: 1px solid none;
   border-radius: 0.25rem;
 }
 
@@ -5354,7 +5354,7 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid #C1C1C1;
+  border-bottom: 1px solid none;
 }
 
 .card-header:first-child {
@@ -5364,7 +5364,7 @@ fieldset:disabled .btn {
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid #C1C1C1;
+  border-top: 1px solid none;
 }
 
 .card-footer:last-child {
@@ -13282,10 +13282,114 @@ fieldset:disabled .btn {
   }
 }
 
+.square-rounded {
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+
+.square-rounded-top-left {
+  border-top: 2px solid #62DB54;
+  border-left: 2px solid #62DB54;
+  border-top-left-radius: 10px;
+}
+
+.square-rounded-top-right {
+  border-top: 2px solid #62DB54;
+  border-right: 2px solid #62DB54;
+  border-top-right-radius: 10px;
+}
+
+.square-rounded-bottom-left {
+  border-bottom: 2px solid #62DB54;
+  border-left: 2px solid #62DB54;
+  border-bottom-left-radius: 10px;
+}
+
+.square-rounded-bottom-right {
+  border-bottom: 2px solid #62DB54;
+  border-right: 2px solid #62DB54;
+  border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .card:hover .square-rounded {
+    display: block;
+  }
+}
+
 .share-bg {
   background-position: center;
   background-size: cover;
   background-image: url(../images/bg_share.jpg);
+}
+
+.feedback {
+  border-radius: 24px 24px 24px 0px;
+}
+
+.feedback .avator {
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  right: 24px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .feedback {
+    max-height: 178px;
+    max-width: 416px;
+    margin-left: -24px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-control {
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .swiper-control {
+    bottom: 30px;
+    left: 5%;
+    width: 25%;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: 100%;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  content: "";
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin: 0 auto;
+  bottom: -10px;
+  left: 30%;
+  width: 50%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #62DB54;
+  opacity: 1;
+  bottom: 20px;
+  left: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #62DB54;
+  width: 16px;
+  height: 8px;
+  border-radius: 10px;
 }
 
 .join-us-icon {
