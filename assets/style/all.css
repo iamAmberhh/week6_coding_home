@@ -13066,10 +13066,17 @@ fieldset:disabled .btn {
   height: 336px;
 }
 
+.banner p {
+  font-size: 14px;
+}
+
 @media (min-width: 768px) {
   .banner {
     background-image: url(../images/bg_home.jpg);
     height: 100vh;
+  }
+  .banner p {
+    font-size: 18px;
   }
 }
 
@@ -13417,6 +13424,7 @@ fieldset:disabled .btn {
 
 .triangle {
   position: relative;
+  z-index: 5;
 }
 
 .triangle::after {
@@ -13500,6 +13508,24 @@ fieldset:disabled .btn {
 .timeline-pointer-active::before {
   border: 1px solid #62DB54;
   background: #62DB54;
+}
+
+@media (min-width: 992px) {
+  .sign-block {
+    position: relative;
+    z-index: 1;
+  }
+  .sign-block::before {
+    position: absolute;
+    content: "";
+    background-color: #1C1C1C;
+    width: 50px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    z-index: -1;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */

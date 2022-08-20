@@ -9,12 +9,12 @@
     Coding Home 程式家教
   </title>
   <link rel="shortcut icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -132,7 +132,7 @@
                 <div class="row mb-4">
                     <div class="col">
                         <label for="effective-date" class="form-label">有效日期</label>
-                        <input type="text" class="form-control" placeholder="(MM-YY)" id="effective-date" aria-label="effective-date">
+                        <input type="text" class="credit-date form-control flatpickr flatpickr-input bg-dark2" placeholder="(MM-YY)" id="effective-date" aria-label="effective-date">
                     </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
@@ -146,13 +146,24 @@
     </div>
 </section>
 
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+const credit = flatpickr(".credit-date", {
+    dateFormat: "m-Y",
+    minDate: "today",
+    maxDate: new Date().fp_incr(180),
+    disableMobile: "true",
+}); 
+</script>
+
     <footer class="p-md-4 p-3 bg-dark text-center footer">
       <p class="mb-0 text-light">Coding Home © 2022 All Rights Reserved</p>
     </footer>
 
     
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
+    <script src="assets/js/vendors.js"></script>
+    <script src="assets/js/all.js"></script>
 </body>
 
 </html>

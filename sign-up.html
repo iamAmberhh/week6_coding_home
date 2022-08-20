@@ -9,12 +9,12 @@
     Coding Home 程式家教
   </title>
   <link rel="shortcut icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -113,8 +113,8 @@
 </section>
 
 <section class="container mb-max">
-    <div class="row gx-0 gy-6 d-flex align-items-center">
-        <div class="col-lg-4 bg-dark px-5 py-6 triangle ms-lg-lg">
+    <div class="row gx-0 gy-6 d-flex align-items-center mx-5">
+        <div class="col-lg-4 bg-dark px-5 py-6 triangle">
             <div class="card">
                 <div class="card-header text-center p-0 mb-4 border-bottom-0">
                     <img src="assets/images/teacher01.jpg" class="avator border border-primary border-3" alt="photo">
@@ -129,14 +129,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-7 bg-dark2 p-4 py-lg-6 ps-lg-max pe-lg-5 me-5">
+        <div class="col-lg-8 bg-dark2 p-4 py-lg-6 ps-lg-max pe-lg-5 sign-block">
             <h2 class="h3 fw-bold text-center">課程報名</h2>
             <p class="mb-2 fs-5 fw-bold">選擇付款方式</p>
-            <ul class="list-unstyled d-flex mb-5 d-flex">
-                <li><a href="#" class="me-2 btn btn-outline-white p-2 px-lg-4 py-lg-3">信用卡付款</a></li>
-                <li><a href="#" class="me-2 btn btn-outline-white p-2 px-lg-4 py-lg-3">超商繳款</a></li>
-                <li><a href="#" class="me-2 btn btn-outline-white p-2 px-lg-4 py-lg-3">ATM轉帳</a></li>
-                <li><a href="#" class="me-2 btn btn-outline-white p-2 px-lg-4 py-lg-3">12期分期付款</a></li>
+            <ul class="list-unstyled mb-5 row g-2 row-cols-2 row-cols-lg-5">
+                <li class="col"><a href="#" class="btn btn-outline-primary d-block p-2 px-lg-3 py-lg-3">信用卡付款</a></li>
+                <li class="col"><a href="#" class="btn btn-outline-white d-block p-2 px-lg-3 py-lg-3">超商繳款</a></li>
+                <li class="col"><a href="#" class="btn btn-outline-white d-block p-2 px-lg-3 py-lg-3">ATM轉帳</a></li>
+                <li class="col"><a href="#" class="btn btn-outline-white d-block p-2 px-lg-3 py-lg-3">12期分期付款</a></li>
             </ul>
             <p class="mb-4 fs-5 fw-bold">訂單資訊</p>
             <form>
@@ -164,12 +164,13 @@
                             <option value="2">3堂50分鐘</option>
                             <option value="3" selected>10堂50分鐘</option>
                             <option value="3">20堂50分鐘</option>
-                          </select>
+                        </select>
                     </div>
                     <div class="col">
-                        <label for="confirmDate" class="form-label">想預約的日期</label>
-                        <input type="text" class="form-control flatpickr flatpickr-input bg-dark2" placeholder="請選擇日期" id="confirmDate" data-id="confirmDate" aria-label="date">
-                        
+                        <label for="reserveDate" class="form-label">想預約的日期</label>
+                        <input type="text" class="reserve-date form-control flatpickr flatpickr-input bg-dark2"
+                            placeholder="請選擇日期" id="reserveDate" aria-label="date">
+
                     </div>
                 </div>
                 <div class="row mb-4">
@@ -182,7 +183,7 @@
                     <span class="d-block mb-4 mb-lg-0 font-monospace fw-bold fs-5">NT$1600</span>
                     <a type="submit" href="pay.html" class="d-block  btn btn-gradient px-6 py-2 border-0">前往結賬</a>
                 </div>
-                
+
             </form>
 
         </div>
@@ -190,16 +191,26 @@
 </section>
 
 
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script src="./assets/js/flatpickr.js"></script>
+<script>
+    const reserve = flatpickr(".reserve-date", {
+        dateFormat: "Y-m-d",
+        minDate: "today",
+        maxDate: new Date().fp_incr(180),
+        disableMobile: "true",
+    });
+</script>
 
     <footer class="p-md-4 p-3 bg-dark text-center footer">
       <p class="mb-0 text-light">Coding Home © 2022 All Rights Reserved</p>
     </footer>
 
     
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
+    <script src="assets/js/vendors.js"></script>
+    <script src="assets/js/all.js"></script>
 </body>
 
 </html>
