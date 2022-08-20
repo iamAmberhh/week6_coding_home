@@ -9,6 +9,8 @@
     Coding Home 程式家教
   </title>
   <link rel="shortcut icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
@@ -165,8 +167,9 @@
                           </select>
                     </div>
                     <div class="col">
-                        <label for="date" class="form-label">想預約的日期</label>
-                        <input type="text" class="form-control" placeholder="請選擇日期" id="date" aria-label="date">
+                        <label for="confirmDate" class="form-label">想預約的日期</label>
+                        <input type="text" class="form-control flatpickr flatpickr-input bg-dark2" placeholder="請選擇日期" id="confirmDate" data-id="confirmDate" aria-label="date">
+                        
                     </div>
                 </div>
                 <div class="row mb-4">
@@ -185,6 +188,10 @@
         </div>
     </div>
 </section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="./assets/js/flatpickr.js"></script>
 
     <footer class="p-md-4 p-3 bg-dark text-center footer">
       <p class="mb-0 text-light">Coding Home © 2022 All Rights Reserved</p>

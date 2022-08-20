@@ -1,7 +1,14 @@
+// $(function() {
+//   console.log('Hello Bootstrap5');
+// });
+"use strict";
 "use strict";
 
-$(function () {
-  console.log('Hello Bootstrap5');
+var fp = flatpickr("#confirmDate", {
+  dateFormat: "Y-m-d",
+  minDate: "today",
+  maxDate: new Date().fp_incr(180),
+  disableMobile: "true"
 });
 "use strict";
 
