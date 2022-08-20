@@ -13159,7 +13159,7 @@ fieldset:disabled .btn {
 }
 
 .number-icon {
-  top: -25%;
+  top: -18%;
   left: 40px;
   padding: 8px;
   background-color: #1C1C1C;
@@ -13463,6 +13463,20 @@ fieldset:disabled .btn {
   top: -18px;
 }
 
+.timeline-active-finish::after {
+  background-color: #62DB54;
+}
+
+.timeline-active-first::after {
+  position: absolute;
+  content: "";
+  background-color: #62DB54;
+  height: 2px;
+  width: 50%;
+  top: -18px;
+  z-index: 3;
+}
+
 .timeline-pointer {
   position: relative;
 }
@@ -13486,7 +13500,7 @@ fieldset:disabled .btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
+  z-index: 5;
 }
 
 .timeline-pointer-first::before {
