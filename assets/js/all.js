@@ -9,6 +9,9 @@ var swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
   effect: "fade",
+  fadeEffect: {
+    crossFade: true
+  },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',

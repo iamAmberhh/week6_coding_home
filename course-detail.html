@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navbar-border">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky sticky-top navbar-border">
     <div class="container">
       <h1 class="logo"><a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt="logo">Coding
           home</a></h1>
@@ -31,8 +31,8 @@
           drag_handle
         </span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+      <div class="collapse navbar-collapse mt-3" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 mb-lg-0 text-center">
           <li class="nav-item">
             <a class="nav-link h5 me-lg-6" aria-current="page" href="index.html">首頁</a>
           </li>
@@ -87,7 +87,7 @@
   
 <section class="bg-dark2">
     <div class="container py-6 py-md-max">
-        <div class="row gx-4">
+        <div class="row gx-4 ">
             <div class="col-lg-7 offset-lg-1">
                 <div class="card rounded-3 px-2 py-5 p-md-6 course-card flex-md-row mb-6">
                     <div class="card-header text-center mb-2 border-bottom-0">
@@ -161,67 +161,70 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="position-relative border p-5 bg-dark">
-                    <div class="position-absolute top-0 start-0 translate-middle white-block"></div>
-                    <div class="position-absolute top-0 start-100 translate-middle white-block"></div>
-                    <div class="position-absolute top-100 start-0 translate-middle white-block"></div>
-                    <div class="position-absolute top-100 start-100 translate-middle white-block"></div>
-                    <div class="list-group">
-                        <a href="sign-up.html"
-                            class="list-group-item list-group-item-action border-0 border-bottom d-flex justify-content-between align-items-center"
-                            aria-current="true">
-                            <div>
-                                <p class="mb-0 fs-3 font-monospace">NT1600</p>
-                                <span>1堂50分鐘</span>
-                            </div>
-                            <span class="material-symbols-outlined btn-gradient border-0 rounded-circle p-2">
-                                chevron_right
-                            </span>
-                        </a>
-                        <a href="sign-up.html"
-                            class="list-group-item list-group-item-action border-0 border-bottom d-flex justify-content-between align-items-center"
-                            aria-current="true">
-                            <div>
-                                <p class="mb-0 fs-3 font-monospace">NT1400</p>
-                                <span>3堂50分鐘</span>
-                            </div>
-                            <span class="material-symbols-outlined btn-gradient border-0 rounded-circle p-2">
-                                chevron_right
-                            </span>
-                        </a>
-                        <a href="sign-up.html"
-                            class="list-group-item list-group-item-action border-0 border-bottom d-flex justify-content-between align-items-center"
-                            aria-current="true">
-                            <div>
-                                <p class="mb-0 fs-3 font-monospace">NT1000</p>
-                                <span>10堂50分鐘</span>
-                            </div>
-                            <span class="material-symbols-outlined btn-gradient border-0 rounded-circle p-2">
-                                chevron_right
-                            </span>
-                        </a>
-                        <a href="sign-up.html"
-                            class="list-group-item list-group-item-action border-0 border-bottom d-flex justify-content-between align-items-center"
-                            aria-current="true">
-                            <div>
-                                <p class="mb-0 fs-3 font-monospace">NT900</p>
-                                <span>20堂50分鐘</span>
-                            </div>
-                            <span class="material-symbols-outlined btn-gradient border-0 rounded-circle p-2">
-                                chevron_right
-                            </span>
-                        </a>
-                        <a href="sign-up.html"
-                            class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center"
-                            aria-current="true">
-                            <div>
-                                <p class="mb-0 fs-3">洽談報價</p>
-                                <span>客製化課程/專案製作</span>
-                            </div>
-                            <span class="material-symbols-outlined btn-gradient border-0 rounded-circle p-2">
-                                chevron_right
-                            </span>
-                        </a>
+                <div class="sidebar-sticky">
+
+                    <div class="position-relative border p-5 bg-dark">
+                        <div class="position-absolute top-0 start-0 translate-middle white-block"></div>
+                        <div class="position-absolute top-0 start-100 translate-middle white-block"></div>
+                        <div class="position-absolute top-100 start-0 translate-middle white-block"></div>
+                        <div class="position-absolute top-100 start-100 translate-middle white-block"></div>
+                        <div class="list-group">
+                            <a href="sign-up.html"
+                                class="list-group-item list-group-item-action border-0 border-bottom d-flex justify-content-between align-items-center"
+                                aria-current="true">
+                                <div>
+                                    <p class="mb-0 fs-3 font-monospace">NT1600</p>
+                                    <span>1堂50分鐘</span>
+                                </div>
+                                <span class="material-symbols-outlined btn-gradient border-0 rounded-circle p-2">
+                                    chevron_right
+                                </span>
+                            </a>
+                            <a href="sign-up.html"
+                                class="list-group-item list-group-item-action border-0 border-bottom d-flex justify-content-between align-items-center"
+                                aria-current="true">
+                                <div>
+                                    <p class="mb-0 fs-3 font-monospace">NT1400</p>
+                                    <span>3堂50分鐘</span>
+                                </div>
+                                <span class="material-symbols-outlined btn-gradient border-0 rounded-circle p-2">
+                                    chevron_right
+                                </span>
+                            </a>
+                            <a href="sign-up.html"
+                                class="list-group-item list-group-item-action border-0 border-bottom d-flex justify-content-between align-items-center"
+                                aria-current="true">
+                                <div>
+                                    <p class="mb-0 fs-3 font-monospace">NT1000</p>
+                                    <span>10堂50分鐘</span>
+                                </div>
+                                <span class="material-symbols-outlined btn-gradient border-0 rounded-circle p-2">
+                                    chevron_right
+                                </span>
+                            </a>
+                            <a href="sign-up.html"
+                                class="list-group-item list-group-item-action border-0 border-bottom d-flex justify-content-between align-items-center"
+                                aria-current="true">
+                                <div>
+                                    <p class="mb-0 fs-3 font-monospace">NT900</p>
+                                    <span>20堂50分鐘</span>
+                                </div>
+                                <span class="material-symbols-outlined btn-gradient border-0 rounded-circle p-2">
+                                    chevron_right
+                                </span>
+                            </a>
+                            <a href="sign-up.html"
+                                class="list-group-item list-group-item-action border-0 d-flex justify-content-between align-items-center"
+                                aria-current="true">
+                                <div>
+                                    <p class="mb-0 fs-3">洽談報價</p>
+                                    <span>客製化課程/專案製作</span>
+                                </div>
+                                <span class="material-symbols-outlined btn-gradient border-0 rounded-circle p-2">
+                                    chevron_right
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,8 +235,8 @@
 
 <section class="container py-6 py-md-max">
     <h2 class="h3 text-center mb-lg position-relative h2-title">其他人也看了這些課程</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-6">
-        <div class="col">
+    <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-6 list-unstyled">
+        <li class="col">
             <div class="card rounded-3 h-100 pt-3 pb-2 course-card">
                 <div class="card-header text-center mb-2 border-bottom-0">
                     <img src="assets/images/teacher01.jpg" class="avator mb-2" alt="photo">
@@ -246,12 +249,12 @@
                         <p class="card-text">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
                     </div>
                 </div>
-                <div class="card-footer text-center border-top-white">
+                <div class="card-footer text-center border-top border-light">
                     <p class="mb-0">50分鐘<span class="fs-2 ms-2 font-monospace">NT$1600</span></p>
                 </div>
             </div>
-        </div>
-        <div class="col">
+        </li>
+        <li class="col">
             <div class="card rounded-3 h-100 pt-3 pb-2 course-card">
                 <div class="card-header text-center mb-2 border-bottom-0">
                     <img src="assets/images/teacher02.jpg" class="avator mb-2" alt="photo">
@@ -264,12 +267,12 @@
                         <p class="card-text">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
                     </div>
                 </div>
-                <div class="card-footer text-center border-top-white">
+                <div class="card-footer text-center border-top border-light">
                     <p class="mb-0">50分鐘<span class="fs-2 ms-2 font-monospace">NT$2200</span></p>
                 </div>
             </div>
-        </div>
-        <div class="col">
+        </li>
+        <li class="col">
             <div class="card rounded-3 h-100 pt-3 pb-2 course-card">
                 <div class="card-header text-center mb-2 border-bottom-0">
                     <img src="assets/images/teacher03.jpg" class="avator mb-2" alt="photo">
@@ -282,12 +285,12 @@
                         <p class="card-text">Line Bot可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
                     </div>
                 </div>
-                <div class="card-footer text-center border-top-white">
+                <div class="card-footer text-center border-top border-light">
                     <p class="mb-0">50分鐘<span class="fs-2 ms-2 font-monospace">NT$1100</span></p>
                 </div>
             </div>
-        </div>
-        <div class="col">
+        </li>
+        <li class="col">
             <div class="card rounded-3 h-100 pt-3 pb-2 course-card">
                 <div class="card-header text-center mb-2 border-bottom-0">
                     <img src="assets/images/teacher04.jpg" class="avator mb-2" alt="photo">
@@ -300,15 +303,15 @@
                         <p class="card-text">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
                     </div>
                 </div>
-                <div class="card-footer text-center border-top-white">
+                <div class="card-footer text-center border-top border-light">
                     <p class="mb-0">50分鐘<span class="fs-2 ms-2 font-monospace">NT$1100</span></p>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 </section>
 
-    <footer class="p-md-4 p-3 bg-dark text-center footer">
+    <footer class="p-md-4 p-3 bg-dark text-center footer font-monospace">
       <p class="mb-0 text-light">Coding Home © 2022 All Rights Reserved</p>
     </footer>
 
