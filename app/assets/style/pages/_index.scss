@@ -3,15 +3,9 @@
     background-image: url(../images/bg_home_mobile.jpg);
     width: 100%;
     height: 336px;
-    p{
-        font-size: 14px;
-    }
     @include media-breakpoint-up(md) {
         background-image: url(../images/bg_home.jpg);
         height: 100vh;
-        p{
-            font-size: 18px;
-        } 
     }
 }
  
@@ -38,6 +32,7 @@
 .learn-card{
     background-color: #202020;
     border-radius: 12px;
+    border:1px solid transparent;
     &:hover{
         background: #000;
         border:1px solid $primary;
@@ -192,6 +187,7 @@
 }
 
 .feedback{
+    width: 100%;
     border-radius: 24px 24px 24px 0px;
     .avator{
         width: 80px;
@@ -211,26 +207,47 @@
     width: 100%;
     height: 100%;
 }
+.swiper-img{
+    height: 350px;
+    width: 95%;
+    margin-left: 10px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &::after{
+        position: absolute;
+        content:"";
+        width: 100%;
+        height: 100%;
+        top: 10px;
+        left: -10px;
+        border-radius: 24px;
+        border:1px solid white;
+        z-index:-1;
+    }
+}
 .swiper-control{
     bottom: 0px;
     left: 0;
     width: 100%;
     @include media-breakpoint-up(lg){
-        bottom: 30px;
-        left: 5%;
+        bottom: 20px;
+        left: 10%;
         width: 25%;
     }
 }
 .swiper-button-next,.swiper-button-prev{
-    top:100%;
     &:after{
         content:"";
     }
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal{
     margin: 0 auto;
-    bottom: -10px;
-    left: 30%;
+    bottom:-13px;
+    left: 25%;
     width: 50%;
 }
 .swiper-pagination-bullet{

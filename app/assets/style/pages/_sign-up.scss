@@ -74,6 +74,9 @@
     &-third::before{
         content:"3";
     }
+    &-finish::before{
+        content:"✓";
+    }
     &-active{
         color:white;
         &::before{
